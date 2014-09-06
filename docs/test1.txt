@@ -1,0 +1,193 @@
+AAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBAAAAAAAAAAAABBBBBBBBBBBBCCCCCCCCCCCCCDDDDDDDDDDDDAAAAAAAAAAAABBBBBBBBBBBBBCCCCCCCCCCCCCDDDDDDDDDDDDDAAAAAAAAAAAAABBBBBBBBBBBBCCCCCCCCCCCCDDDDDDDDDDDDDAAAAAAAAAAAABBBBBBBBBBBBBCCCCCCCCCCCCDDDDDDDDDDDDDAAAAAAAAAAAABBBBBBBBBBBBBCCCCCCCCCCCCCDDDDDDDDDDDDDAAAAAAAAAAAAABBBBBBBBBBBBCCCCCCCCCCCCCDDDDDDDDDDDDABBBBBBBBBBBBCCCCCCCCCCCCDDDDDDDDDDDDCCCCCCCCCCCCDDDDDDDDDDDD
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDC
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDD
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDBBBBBBBBBBBBBBBBBBBBBBBDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDBBBBBBBBBBBBBBBBBBBBBBBDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+int main()
+{
+    int i, count=0;
+
+    kprintf("\n\nTEST1:\n");
+    ps();
+    resume(prA = create(prch,2000,80,"proc A",1,'A'));
+    ps();
+    resume(prC = create(prch,2000,5,"proc C",1,'C'));
+    ps();
+    resume(prB = create(prch,2000,90,"proc B",1,'B'));
+    ps();
+    resume(prF = create(prch,2000,60,"proc F",1,'F'));
+    ps();
+    //setschedclass(RANDOMSHED);
+    ps();
+    resume(prD = create(prch,2000,10,"proc D",1,'D'));
+    ps();
+    resume(prE = create(prch,2000,40,"proc E",1,'E'));
+    ps();
+
+
+    while (count++ < LOOP) {
+        kprintf("%c", 'M');
+        for (i = 0; i< 1000000; i++);
+    }
+}
+
+XinuSched
+TEST1:
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+ps for pid 48 proc proc A
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc A       48        80      PRCURR        70     1     0        4096
+            main       49        20     PRREADY         1     1     1        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ps for pid 46 proc proc B
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc B       46        90      PRCURR        71     1     0        4096
+            main       49        20     PRREADY         2     2     2        4096
+          proc C       47         5     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+ps for pid 45 proc proc F
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc F       45        60      PRCURR        72     1     0        4096
+            main       49        20     PRREADY         2     3     3        4096
+          proc C       47         5     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEps for pid 43 proc proc E
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc E       43        40      PRCURR        72     1     0        4096
+            main       49        20     PRREADY         2     4     4        4096
+          proc D       44        10     PRREADY         0     0     0        4096
+          proc C       47         5     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+ps for pid 49 proc main
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRCURR         3     5     4        4096
+          proc D       44        10     PRREADY         0     0     0        4096
+          proc C       47         5     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+ps for pid 49 proc main
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRCURR        77     5     4        4096
+          proc D       44        10     PRREADY         0     0     0        4096
+          proc C       47         5     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+
+ps for pid 44 proc proc D
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc D       44        10      PRCURR        72     1     0        4096
+          proc C       47         5     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+ps for pid 47 proc proc C
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc C       47         5      PRCURR        72     1     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+
+
+All user processes have completed.
+
+
+RandomSched
+TEST1:
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ps for pid 48 proc proc A
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc A       48        80      PRCURR        76     1     0        4096
+            main       49        20     PRREADY         1     1     1        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ps for pid 46 proc proc B
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc B       46        90      PRCURR        72     1     0        4096
+            main       49        20     PRREADY         1     2     2        4096
+          proc C       47         5     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+ps for pid 45 proc proc F
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc F       45        60      PRCURR        87     1     0        4096
+            main       49        20     PRREADY         1     3     3        4096
+          proc C       47         5     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+ps for pid 49 proc main
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc E       43        40     PRREADY         0     0     0        4096
+            main       49        20      PRCURR         1     6     5        4096
+          proc D       44        10     PRREADY        60     2     2        4096
+          proc C       47         5     PRREADY        60     2     2        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMCCCCCCCCCCCCCCCCCCCC
+ps for pid 47 proc proc C
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc E       43        40     PRREADY         0     0     0        4096
+            main       49        20     PRREADY        31     6     6        4096
+          proc D       44        10     PRREADY        60     2     2        4096
+          proc C       47         5      PRCURR        75     3     2        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+DDDDDDDDDDDDDDDDDDD
+ps for pid 44 proc proc D
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc E       43        40     PRREADY         0     0     0        4096
+            main       49        20     PRREADY        31     6     6        4096
+          proc D       44        10      PRCURR        75     3     2        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEMMMMMMMMMMMMMMMMMMM
+ps for pid 49 proc main
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc E       43        40     PRREADY        30     1     1        4096
+            main       49        20      PRCURR        76     8     7        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+ps for pid 43 proc proc E
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc E       43        40      PRCURR        74     2     1        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+
+
+All user processes have completed.
+
+

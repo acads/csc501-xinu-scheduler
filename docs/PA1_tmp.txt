@@ -1,0 +1,260 @@
+TODO
+----
+    * Remove DTRACE
+    * Remove unwated inclusion of lab1.h
+done        * Remove ins & outs in ps output
+done        * Modify ps to handle q's of Xinu, random & Linux schedulers
+done        * Remove traps
+    * chprio test cases for t1, t2 & t3
+    
+
+Modified files
+--------------
+compile/Makefile
+
+h/proc.h
+h/lab1.h
+
+sys/ps.c
+sys/rasched.c
+sys/lsched.c
+
+sys/initialize.c
+sys/kill.c
+sys/main.c
+sys/ready.c
+sys/resched.c
+sys/resume.c
+sys/suspend.c
+sys/unsleep.c
+
+********************************************************************************
+Usual
+-----
+~adhanas/afshome/501/setup_vim
+~adhanas/afshome/501/create_xinu
+
+~adhanas/afshome/501/backup_pa1
+~adhanas/afshome/501/restore_pa1
+
+
+sudo /bin/serial_server &
+cd ~adhanas/csc501-lab1/compile
+sudo sh -c "echo 127.0.0.1 `cs-status | head -1 | sed 's/://g'` >> /etc/hosts"
+
+DTRACE("DBG_INFO: %d %s: \n", currpid, __func__);
+********************************************************************************
+    setnok(pid_main, getpid());
+    kill(getpid());
+
+void
+proc10(int data)
+{
+    uint32_t i = 0;
+    uint32_t j = 0;
+    
+    DTRACE_START;
+    ps();
+    for (i = 0; i < 1000; ++i) {
+        for (j = 0; j < 10000; ++j);
+    }
+    ps();
+    DTRACE_END;
+    return;
+}
+
+pid10 = create((int *) &proc10, 256, 10, "proc10", 1, 10);
+
+********************************************************************************
+(command-mode) d
+file: xinu.elf
+connection 'backend-dl', class 'DOWNLOAD', host 'vcln1-2.hpc.ncsu.edu'
+72 -rw-rw-rw- 1 root 66928 Jan 23 backend
+cp-bootable complete
+
+(command-mode) p
+connection 'backend-pc', class 'POWERCYCLE', host 'vcln1-2.hpc.ncsu.edu'
+Client 1 (fd: 6) exited
+Client (named) 1 (fd: 6) joined
+
+pcibios_init : PCI BIOS revision 2.10 entry at 0xfd9a0
+pci_init: PCI BIOS initialization succeeded
+
+
+Xinu Version (CSC501 1-2009 base) #21 (adhanas@vcln1-2.hpc) Thu Jan 23 10:05:22 EST 2014
+
+16777216 bytes real mem
+67067 bytes Xinu code
+clock enabled
+
+
+Hello World, Xinu lives
+
+DBG_INFO: 49 main start
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRCURR         1     1     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: 46 proc10 start
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc50       44        50      PRUSUP         0     0     0        4096
+          proc40       45        40      PRUSUP         0     0     0        4096
+          proc30       46        30      PRCURR         0     1     0        4096
+          proc20       47        20      PRUSUP         0     0     0        4096
+            main       49        20     PRREADY        10     1     1        4096
+          proc10       48        10      PRUSUP         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: 44 proc10 start
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc50       44        50      PRCURR         1     1     0        4096
+          proc40       45        40      PRUSUP         0     0     0        4096
+          proc30       46        30     PRREADY         1     1     1        4096
+          proc20       47        20      PRUSUP         0     0     0        4096
+            main       49        20     PRREADY        10     1     1        4096
+          proc10       48        10      PRUSUP         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: 44 proc10 end
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc50       44        50      PRCURR        10     1     0        4096
+          proc40       45        40      PRUSUP         0     0     0        4096
+          proc30       46        30     PRREADY         1     1     1        4096
+          proc20       47        20      PRUSUP         0     0     0        4096
+            main       49        20     PRREADY        10     1     1        4096
+          proc10       48        10      PRUSUP         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: kill: proc50[44] is dead 2
+DBG_INFO: 46 proc10 end
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc40       45        40      PRUSUP         0     0     0        4096
+          proc30       46        30      PRCURR         8     2     1        4096
+          proc20       47        20      PRUSUP         0     0     0        4096
+            main       49        20     PRREADY        10     1     1        4096
+          proc10       48        10      PRUSUP         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: kill: proc30[46] is dead 2
+49 main middle
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc40       45        40      PRUSUP         0     0     0        4096
+          proc20       47        20      PRUSUP         0     0     0        4096
+            main       49        20      PRCURR        12     2     1        4096
+          proc10       48        10      PRUSUP         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: 47 proc10 start
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc40       45        40      PRUSUP         0     0     0        4096
+          proc20       47        20      PRCURR         1     1     0        4096
+            main       49        20     PRREADY        15     2     2        4096
+          proc10       48        10     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: 47 proc10 end
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc40       45        40      PRUSUP         0     0     0        4096
+          proc20       47        20      PRCURR        10     1     0        4096
+            main       49        20     PRREADY        15     2     2        4096
+          proc10       48        10     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: 45 proc10 start
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc40       45        40      PRCURR         1     1     0        4096
+          proc20       47        20     PRREADY        20     1     1        4096
+            main       49        20     PRREADY        15     3     3        4096
+          proc10       48        10     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: 45 proc10 end
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc40       45        40      PRCURR        11     1     0        4096
+          proc20       47        20     PRREADY        20     1     1        4096
+            main       49        20     PRREADY        15     3     3        4096
+          proc10       48        10     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: kill: proc40[45] is dead 2
+DBG_INFO: kill: proc20[47] is dead 2
+DBG_INFO: 49 wait_for_children start
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRCURR        17     4     3        4096
+          proc10       48        10     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: 49 wait_for_children:  proc50 is dead
+DBG_INFO: 49 wait_for_children: middle
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRCURR        22     4     3        4096
+          proc10       48        10     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: 48 proc10 start
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRRECV        28     4     4        4096
+          proc10       48        10      PRCURR         1     1     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: 48 proc10 end
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRRECV        28     4     4        4096
+          proc10       48        10      PRCURR         9     1     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: 49 wait_for_children:  proc10 is dead
+DBG_INFO: 49 wait_for_children: middle
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRCURR        30     5     4        4096
+          proc10       48        10     PRREADY        18     1     1        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+DBG_INFO: kill: proc10[48] is dead 2
+
+(command-mode) d
+file: xinu.elf
+connection 'backend-dl', class 'DOWNLOAD', host 'vcln2-13'
+72 -rw-rw-rw- 1 root 66808 Jan 24 backend
+cp-bootable complete
+
+
+
+(command-mode) p
+connection 'backend-pc', class 'POWERCYCLE', host 'vcln2-13'
+Client (named) 1 (fd: 6) joined
+
+pcibios_init : PCI BIOS revision 2.10 entry at 0xfd9a0
+pci_init: PCI BIOS initialization succeeded
+Xinu trap!
+exception 13 (general protection violation) currpid 0 (prnull)
+eflags 10006 eip ffffb4 error code 00000000 (0)
+register dump:
+eax 00ffffaa (16777130)
+ecx 00000c00 (3072)
+edx 00000c0c (3084)
+ebx 0000dfd0 (57296)
+esp 00ffff84 (16777092)
+ebp 00ffff84 (16777092)
+esi 0000dfd0 (57296)
+edi 00ffffaa (16777130)
+
+Trap to monitor.....
+monitor commands: <?> help, <b> boot Xinu, <c> continue, <r> restart
+monitor> 
+

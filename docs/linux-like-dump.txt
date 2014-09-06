@@ -1,0 +1,1922 @@
+MMCCCCCCCCCCCCCCBBBBBBBBCCCCCCCCCCCCCCBBBBBBBBCCCCCCCCCCCCCCBBBBBBBBCCCCCCCCBBBBBBBBMMMBBBBBBBMMMBBBBBBBBMMMBBBMMMAMMMAMMMAMMMAMMMMMMAMMMMAMMMAMMMAMMMMMMAMMMAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+MCCCCCCCCCCCCCCBBBBBBBBCCCCCCCCCCCCCCBBBBBBBBCCCCCCCCCCCCCBBBBBBBCCCCCCCCCBBBBBBBBMMMMBBBBBBBMMMBBBBBBBBMMMBBBBMMMAMMMAMMMAMMMAMMMMMAMMMMAMMMAMMMMMMAMMMAMMMAMMAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+MMCCCCCCCCCCCCCCBBBBBBBBCCCCCCCCCCCCCCBBBBBBBBCCCCCCCCCCCCCBBBBBBBCCCCCCCCCBBBBBBBBMMMBBBBBBBMMMBBBBBBBBMMMBBBBMMAMMMAMMMAMMMMAMMMMMAMMMAMMMAMMMMMMAMMMAMMMAMMMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+MCCCCCCCCCCCCCBBBBBBBBMMMACCCCCCCCCCCCCBBBBBBMMMACCCCCCCCCCCCBBBBBBBMMMACCCCCCCCCCCCBBBBBBBMMMBBBBBBBMMABBBBBBBMMMABBBBBBBMMMBMMMAMMAMMMAMMMMMMAMMMAMMMMMAMMMAMMMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+(command-mode) p
+connection 'backend-pc', class 'POWERCYCLE', host 'bn16-84.dcs.mcnc.org'
+Client (named) 1 (fd: 6) joined
+
+pcibios_init : PCI BIOS revision 2.10 entry at 0xfd9a0
+pci_init: PCI BIOS initialization succeeded
+
+
+Xinu Version (CSC501 1-2009 base) #1 (adhanas@vcln2-9.hpc) Thu Jan 30 20:00:17 EST 2014
+
+16777216 bytes real mem
+77371 bytes Xinu code
+clock enabled
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRCURR         0     1     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+MMCCCCCCCCCCCCCCBBBBBBBBAMMMCCCCCCCCCCCCCCBBBBBBBBMMMACCCCCCCCCCCCCBBBBBBBMMMACCCCCCCCCBBBBBBBBMMMABBBBBBBMMMBBBBBBBBMMMABBBBMMMAMMMAMMMMMMAMMMAMMMAMMMMMMAMMMAMMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+MCCCCCCCCCCCCCBBBBBBBBMMMACCCCCCCCCCCCCBBBBBBMMMACCCCCCCCCCCCBBBBBBBMMMACCCCCCCCCCCCBBBBBBBMMMBBBBBBBMMABBBBBBBMMMABBBBBBBMMMBMMMAMMAMMMAMMMMMMAMMMAMMMMMAMMMAMMMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ 
+
+All user processes have completed.
+
+
+MMCCCCCCCCCCCCCCCBBBBBBBBAMMMBBBBBBBBCCCCCCCCCCCCCMMMABBBBBBBBMMMACCCCCCCCCCCCCCMMMABBBBBBBBMMMCCCCCCCC
+
+(command-mode) p
+connection 'backend-pc', class 'POWERCYCLE', host 'vcln2-3.hpc.ncsu.edu'
+Client (named) 1 (fd: 6) joined
+
+DBG_INFO: 0 ls_init_queue: start
+DBG_INFO: 0 ls_init_queue: end
+pcibios_init : PCI BIOS revision 2.10 entry at 0xfd9a0
+pci_init: PCI BIOS initialization succeeded
+
+
+Xinu Version (CSC501 1-2009 base) #1 (adhanas@vcln2-3.hpc) Thu Jan 30 13:07:26 EST 2014
+
+16777216 bytes real mem
+81595 bytes Xinu code
+clock enabled
+DBG_INFO: 0 create: pid 49, pticks 0, pquant 20, pctr 20, pgood 40
+DBG_INFO: 0 resume: start
+DBG_INFO: 0 resched: start
+DBG_INFO: resched opid 0, npid 49
+DBG_INFO: 49 resched: preempt 10
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRCURR         1     1     0        4096
+          prnull        0         0     PRREADY         3     0     1           0
+
+DBG_INFO: 49 ls_build_queue: start
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 0, pgood 0
+DBG_INFO: 49 ls_enqueue_pid: nullproc not admitted
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 49 ls_build_queue: end
+DBG_INFO: setschedclass sched_class set to 2
+DBG_INFO: 49 create: pid 48, pticks 0, pquant 5, pctr 5, pgood 10
+DBG_INFO: 49 resume: start
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 49 ls_enqueue_pid: pid 48 enqd in ls_nq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 5
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc AO 5 5 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: no PRREADY procs, returning EMPTY_PA1
+DBG_INFO: 49 linux_sched: returning currproc
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: 49 resume: end
+DBG_INFO: 49 create: pid 47, pticks 0, pquant 50, pctr 50, pgood 100
+DBG_INFO: 49 resume: start
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 47, pgood 100
+DBG_INFO: 49 ls_enqueue_pid: nnext 51
+DBG_INFO: 49 ls_enqueue_pid: pid 47 enqd in ls_nq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 3
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 47 proc BO 50 50 100
+DBG_INFO: 49 ls_print_queue: 48 proc AO 5 5 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: no PRREADY procs, returning EMPTY_PA1
+DBG_INFO: 49 linux_sched: returning currproc
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: 49 resume: end
+DBG_INFO: 49 create: pid 46, pticks 0, pquant 90, pctr 90, pgood 180
+DBG_INFO: 49 resume: start
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 46, pgood 180
+DBG_INFO: 49 ls_enqueue_pid: nnext 47
+DBG_INFO: 49 ls_enqueue_pid: nnext 51
+DBG_INFO: 49 ls_enqueue_pid: pid 46 enqd in ls_nq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 1
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 46 proc CO 90 90 180
+DBG_INFO: 49 ls_print_queue: 47 proc BO 50 50 100
+DBG_INFO: 49 ls_print_queue: 48 proc AO 5 5 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: no PRREADY procs, returning EMPTY_PA1
+DBG_INFO: 49 linux_sched: returning currproc
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: 49 resume: end
+DBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 46 proc CO 90 90 180
+DBG_INFO: 49 ls_print_queue: 47 proc BO 50 50 100
+DBG_INFO: 49 ls_print_queue: 48 proc AO 5 5 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: true
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_calc_pquant_pgood: start
+DBG_INFO: 49 ls_calc_pquant_pgood: iter_pid 48, iter_pid.next 47, tail 51
+DBG_INFO: 49 ls_calc_pquant_pgood: pid 48 didn't use any, quant 5, pgood 10
+DBG_INFO: 49 ls_calc_pquant_pgood: pid 47 didn't use any, quant 50, pgood 100
+DBG_INFO: 49 ls_calc_pquant_pgood: pid 46 didn't use any, quant 90, pgood 180
+DBG_INFO: 49 ls_calc_pquant_pgood: end
+DBG_INFO: 49 ls_admit_new_procs: start
+DBG_INFO: 49 ls_admit_new_procs: pid 48's state changed to PRREADY
+DBG_INFO: 49 ls_admit_new_procs: pid 47's state changed to PRREADY
+DBG_INFO: 49 ls_admit_new_procs: pid 46's state changed to PRREADY
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 46 proc C PRREADY 90 90 180
+DBG_INFO: 49 ls_print_queue: 47 proc B PRREADY 50 50 100
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_admit_new_procs: end
+DBG_INFO: 49 ls_init_queue: start
+DBG_INFO: 49 ls_init_queue: end
+DBG_INFO: 49 ls_reorder_queue: start
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 46, pgood 180
+DBG_INFO: 49 ls_enqueue_pid: pid 46 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 47, pgood 100
+DBG_INFO: 49 ls_enqueue_pid: rprev 50
+DBG_INFO: 49 ls_enqueue_pid: pid 47 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 49 ls_enqueue_pid: rprev 47
+DBG_INFO: 49 ls_enqueue_pid: rprev 50
+DBG_INFO: 49 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 46 proc C PRREADY 90 90 180
+DBG_INFO: 49 ls_print_queue: 47 proc B PRREADY 50 50 100
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_reorder_queue: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 46
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 46
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: rprev 48
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 46 resched: preempt 90
+CCCCCCCCCCCCCCDBG_INFO: 46 resched: start
+DBG_INFO: 46 resched: pctr 0
+DBG_INFO: 46 linux_sched: start
+DBG_INFO: 46 linux_sched: currproc state: PRCURR
+DBG_INFO: 46 ls_print_queue: start
+DBG_INFO: 46 ls_print_queue: ---LS rq info start---
+DBG_INFO: 46 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 46 ls_print_queue: 47 proc B PRREADY 50 50 100
+DBG_INFO: 46 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 46 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 46 ls_print_queue: ---LS rq info end---
+DBG_INFO: 46 ls_print_queue: end
+DBG_INFO: 46 ls_is_rqueue_empty: start
+DBG_INFO: 46 ls_is_rqueue_empty: end
+DBG_INFO: 46 ls_end_of_epoch: start
+DBG_INFO: 46 ls_end_of_epoch: pid 47 has non-0 quant
+DBG_INFO: 46 ls_end_of_epoch: false
+DBG_INFO: 46 ls_end_of_epoch: end
+DBG_INFO: 46 ls_dequeue_pid: start
+DBG_INFO: 46 ls_dequeue_pid: deq'd pid 47
+DBG_INFO: 46 ls_dequeue_pid: end
+DBG_INFO: 46 linux_sched: end
+DBG_INFO: resched opid 46, npid 47
+DBG_INFO: 46 ls_enqueue_pid: start
+DBG_INFO: 46 ls_enqueue_pid: pid 46, pgood 180
+DBG_INFO: 46 ls_enqueue_pid: pid 46 enqd in ls_rq
+DBG_INFO: 46 ls_enqueue_pid: end
+DBG_INFO: 47 resched: preempt 50
+BBBBBBBBDBG_INFO: 47 resched: start
+DBG_INFO: 47 resched: pctr 0
+DBG_INFO: 47 linux_sched: start
+DBG_INFO: 47 linux_sched: currproc state: PRCURR
+DBG_INFO: 47 ls_print_queue: start
+DBG_INFO: 47 ls_print_queue: ---LS rq info start---
+DBG_INFO: 47 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 47 ls_print_queue: 46 proc C PRREADY 90 0 180
+DBG_INFO: 47 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 47 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 47 ls_print_queue: ---LS rq info end---
+DBG_INFO: 47 ls_print_queue: end
+DBG_INFO: 47 ls_is_rqueue_empty: start
+DBG_INFO: 47 ls_is_rqueue_empty: end
+DBG_INFO: 47 ls_end_of_epoch: start
+DBG_INFO: 47 ls_end_of_epoch: pid 46 has non-0 quant
+DBG_INFO: 47 ls_end_of_epoch: false
+DBG_INFO: 47 ls_end_of_epoch: end
+DBG_INFO: 47 ls_dequeue_pid: start
+DBG_INFO: 47 ls_dequeue_pid: deq'd pid 46
+DBG_INFO: 47 ls_dequeue_pid: end
+DBG_INFO: 47 linux_sched: end
+DBG_INFO: resched opid 47, npid 46
+DBG_INFO: 47 ls_enqueue_pid: start
+DBG_INFO: 47 ls_enqueue_pid: pid 47, pgood 100
+DBG_INFO: 47 ls_enqueue_pid: pid 47 enqd in ls_rq
+DBG_INFO: 47 ls_enqueue_pid: end
+DBG_INFO: 46 resched: preempt 90
+DBG_INFO: 46 resched: end
+CCCCCCCCCCCCCCDBG_INFO: 46 resched: start
+DBG_INFO: 46 resched: pctr 0
+DBG_INFO: 46 linux_sched: start
+DBG_INFO: 46 linux_sched: currproc state: PRCURR
+DBG_INFO: 46 ls_print_queue: start
+DBG_INFO: 46 ls_print_queue: ---LS rq info start---
+DBG_INFO: 46 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 46 ls_print_queue: 47 proc B PRREADY 50 0 100
+DBG_INFO: 46 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 46 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 46 ls_print_queue: ---LS rq info end---
+DBG_INFO: 46 ls_print_queue: end
+DBG_INFO: 46 ls_is_rqueue_empty: start
+DBG_INFO: 46 ls_is_rqueue_empty: end
+DBG_INFO: 46 ls_end_of_epoch: start
+DBG_INFO: 46 ls_end_of_epoch: pid 47 has non-0 quant
+DBG_INFO: 46 ls_end_of_epoch: false
+DBG_INFO: 46 ls_end_of_epoch: end
+DBG_INFO: 46 ls_dequeue_pid: start
+DBG_INFO: 46 ls_dequeue_pid: deq'd pid 47
+DBG_INFO: 46 ls_dequeue_pid: end
+DBG_INFO: 46 linux_sched: end
+DBG_INFO: resched opid 46, npid 47
+DBG_INFO: 46 ls_enqueue_pid: start
+DBG_INFO: 46 ls_enqueue_pid: pid 46, pgood 180
+DBG_INFO: 46 ls_enqueue_pid: pid 46 enqd in ls_rq
+DBG_INFO: 46 ls_enqueue_pid: end
+DBG_INFO: 47 resched: preempt 50
+DBG_INFO: 47 resched: end
+BBBBBBBDBG_INFO: 47 resched: start
+DBG_INFO: 47 resched: pctr 0
+DBG_INFO: 47 linux_sched: start
+DBG_INFO: 47 linux_sched: currproc state: PRCURR
+DBG_INFO: 47 ls_print_queue: start
+DBG_INFO: 47 ls_print_queue: ---LS rq info start---
+DBG_INFO: 47 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 47 ls_print_queue: 46 proc C PRREADY 90 0 180
+DBG_INFO: 47 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 47 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 47 ls_print_queue: ---LS rq info end---
+DBG_INFO: 47 ls_print_queue: end
+DBG_INFO: 47 ls_is_rqueue_empty: start
+DBG_INFO: 47 ls_is_rqueue_empty: end
+DBG_INFO: 47 ls_end_of_epoch: start
+DBG_INFO: 47 ls_end_of_epoch: pid 46 has non-0 quant
+DBG_INFO: 47 ls_end_of_epoch: false
+DBG_INFO: 47 ls_end_of_epoch: end
+DBG_INFO: 47 ls_dequeue_pid: start
+DBG_INFO: 47 ls_dequeue_pid: deq'd pid 46
+DBG_INFO: 47 ls_dequeue_pid: end
+DBG_INFO: 47 linux_sched: end
+DBG_INFO: resched opid 47, npid 46
+DBG_INFO: 47 ls_enqueue_pid: start
+DBG_INFO: 47 ls_enqueue_pid: pid 47, pgood 100
+DBG_INFO: 47 ls_enqueue_pid: pid 47 enqd in ls_rq
+DBG_INFO: 47 ls_enqueue_pid: end
+DBG_INFO: 46 resched: preempt 90
+DBG_INFO: 46 resched: end
+CCCCCCCCCCCCCDBG_INFO: 46 resched: start
+DBG_INFO: 46 resched: pctr 0
+DBG_INFO: 46 linux_sched: start
+DBG_INFO: 46 linux_sched: currproc state: PRCURR
+DBG_INFO: 46 ls_print_queue: start
+DBG_INFO: 46 ls_print_queue: ---LS rq info start---
+DBG_INFO: 46 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 46 ls_print_queue: 47 proc B PRREADY 50 0 100
+DBG_INFO: 46 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 46 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 46 ls_print_queue: ---LS rq info end---
+DBG_INFO: 46 ls_print_queue: end
+DBG_INFO: 46 ls_is_rqueue_empty: start
+DBG_INFO: 46 ls_is_rqueue_empty: end
+DBG_INFO: 46 ls_end_of_epoch: start
+DBG_INFO: 46 ls_end_of_epoch: pid 47 has non-0 quant
+DBG_INFO: 46 ls_end_of_epoch: false
+DBG_INFO: 46 ls_end_of_epoch: end
+DBG_INFO: 46 ls_dequeue_pid: start
+DBG_INFO: 46 ls_dequeue_pid: deq'd pid 47
+DBG_INFO: 46 ls_dequeue_pid: end
+DBG_INFO: 46 linux_sched: end
+DBG_INFO: resched opid 46, npid 47
+DBG_INFO: 46 ls_enqueue_pid: start
+DBG_INFO: 46 ls_enqueue_pid: pid 46, pgood 180
+DBG_INFO: 46 ls_enqueue_pid: pid 46 enqd in ls_rq
+DBG_INFO: 46 ls_enqueue_pid: end
+DBG_INFO: 47 resched: preempt 50
+DBG_INFO: 47 resched: end
+BBBBBBBBDBG_INFO: 47 resched: start
+DBG_INFO: 47 resched: pctr 0
+DBG_INFO: 47 linux_sched: start
+DBG_INFO: 47 linux_sched: currproc state: PRCURR
+DBG_INFO: 47 ls_print_queue: start
+DBG_INFO: 47 ls_print_queue: ---LS rq info start---
+DBG_INFO: 47 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 47 ls_print_queue: 46 proc C PRREADY 90 0 180
+DBG_INFO: 47 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 47 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 47 ls_print_queue: ---LS rq info end---
+DBG_INFO: 47 ls_print_queue: end
+DBG_INFO: 47 ls_is_rqueue_empty: start
+DBG_INFO: 47 ls_is_rqueue_empty: end
+DBG_INFO: 47 ls_end_of_epoch: start
+DBG_INFO: 47 ls_end_of_epoch: pid 46 has non-0 quant
+DBG_INFO: 47 ls_end_of_epoch: false
+DBG_INFO: 47 ls_end_of_epoch: end
+DBG_INFO: 47 ls_dequeue_pid: start
+DBG_INFO: 47 ls_dequeue_pid: deq'd pid 46
+DBG_INFO: 47 ls_dequeue_pid: end
+DBG_INFO: 47 linux_sched: end
+DBG_INFO: resched opid 47, npid 46
+DBG_INFO: 47 ls_enqueue_pid: start
+DBG_INFO: 47 ls_enqueue_pid: pid 47, pgood 100
+DBG_INFO: 47 ls_enqueue_pid: pid 47 enqd in ls_rq
+DBG_INFO: 47 ls_enqueue_pid: end
+DBG_INFO: 46 resched: preempt 90
+DBG_INFO: 46 resched: end
+CCCCCCCCCDBG_INFO: 46 resched: start
+DBG_INFO: 46 resched: pctr 28
+DBG_INFO: 46 linux_sched: start
+DBG_INFO: 46 linux_sched: currproc state: PRFREE
+DBG_INFO: 46 ls_print_queue: start
+DBG_INFO: 46 ls_print_queue: ---LS rq info start---
+DBG_INFO: 46 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 46 ls_print_queue: 47 proc B PRREADY 50 0 100
+DBG_INFO: 46 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 46 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 46 ls_print_queue: ---LS rq info end---
+DBG_INFO: 46 ls_print_queue: end
+DBG_INFO: 46 ls_is_rqueue_empty: start
+DBG_INFO: 46 ls_is_rqueue_empty: end
+DBG_INFO: 46 ls_end_of_epoch: start
+DBG_INFO: 46 ls_end_of_epoch: pid 47 has non-0 quant
+DBG_INFO: 46 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 46 ls_end_of_epoch: false
+DBG_INFO: 46 ls_end_of_epoch: end
+DBG_INFO: 46 ls_dequeue_pid: start
+DBG_INFO: 46 ls_dequeue_pid: deq'd pid 47
+DBG_INFO: 46 ls_dequeue_pid: end
+DBG_INFO: 46 linux_sched: end
+DBG_INFO: resched opid 46, npid 47
+DBG_INFO: 47 resched: preempt 50
+DBG_INFO: 47 resched: end
+BBBBBBBDBG_INFO: 47 resched: start
+DBG_INFO: 47 resched: pctr 0
+DBG_INFO: 47 linux_sched: start
+DBG_INFO: 47 linux_sched: currproc state: PRCURR
+DBG_INFO: 47 ls_print_queue: start
+DBG_INFO: 47 ls_print_queue: ---LS rq info start---
+DBG_INFO: 47 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 47 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 47 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 47 ls_print_queue: ---LS rq info end---
+DBG_INFO: 47 ls_print_queue: end
+DBG_INFO: 47 ls_is_rqueue_empty: start
+DBG_INFO: 47 ls_is_rqueue_empty: end
+DBG_INFO: 47 ls_end_of_epoch: start
+DBG_INFO: 47 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 47 ls_end_of_epoch: false
+DBG_INFO: 47 ls_end_of_epoch: end
+DBG_INFO: 47 ls_dequeue_pid: start
+DBG_INFO: 47 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 47 ls_dequeue_pid: end
+DBG_INFO: 47 linux_sched: end
+DBG_INFO: resched opid 47, npid 49
+DBG_INFO: 47 ls_enqueue_pid: start
+DBG_INFO: 47 ls_enqueue_pid: pid 47, pgood 100
+DBG_INFO: 47 ls_enqueue_pid: pid 47 enqd in ls_rq
+DBG_INFO: 47 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 47 proc B PRREADY 50 0 100
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 47 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 47
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 47
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 47 resched: preempt 50
+DBG_INFO: 47 resched: end
+BBBBBBBBDBG_INFO: 47 resched: start
+DBG_INFO: 47 resched: pctr 0
+DBG_INFO: 47 linux_sched: start
+DBG_INFO: 47 linux_sched: currproc state: PRCURR
+DBG_INFO: 47 ls_print_queue: start
+DBG_INFO: 47 ls_print_queue: ---LS rq info start---
+DBG_INFO: 47 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 47 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 47 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 47 ls_print_queue: ---LS rq info end---
+DBG_INFO: 47 ls_print_queue: end
+DBG_INFO: 47 ls_is_rqueue_empty: start
+DBG_INFO: 47 ls_is_rqueue_empty: end
+DBG_INFO: 47 ls_end_of_epoch: start
+DBG_INFO: 47 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 47 ls_end_of_epoch: false
+DBG_INFO: 47 ls_end_of_epoch: end
+DBG_INFO: 47 ls_dequeue_pid: start
+DBG_INFO: 47 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 47 ls_dequeue_pid: end
+DBG_INFO: 47 linux_sched: end
+DBG_INFO: resched opid 47, npid 49
+DBG_INFO: 47 ls_enqueue_pid: start
+DBG_INFO: 47 ls_enqueue_pid: pid 47, pgood 100
+DBG_INFO: 47 ls_enqueue_pid: pid 47 enqd in ls_rq
+DBG_INFO: 47 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 47 proc B PRREADY 50 0 100
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 47 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 47
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 47
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 47 resched: preempt 50
+DBG_INFO: 47 resched: end
+BBBBBBBDBG_INFO: 47 resched: start
+DBG_INFO: 47 resched: pctr 0
+DBG_INFO: 47 linux_sched: start
+DBG_INFO: 47 linux_sched: currproc state: PRCURR
+DBG_INFO: 47 ls_print_queue: start
+DBG_INFO: 47 ls_print_queue: ---LS rq info start---
+DBG_INFO: 47 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 47 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 47 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 47 ls_print_queue: ---LS rq info end---
+DBG_INFO: 47 ls_print_queue: end
+DBG_INFO: 47 ls_is_rqueue_empty: start
+DBG_INFO: 47 ls_is_rqueue_empty: end
+DBG_INFO: 47 ls_end_of_epoch: start
+DBG_INFO: 47 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 47 ls_end_of_epoch: false
+DBG_INFO: 47 ls_end_of_epoch: end
+DBG_INFO: 47 ls_dequeue_pid: start
+DBG_INFO: 47 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 47 ls_dequeue_pid: end
+DBG_INFO: 47 linux_sched: end
+DBG_INFO: resched opid 47, npid 49
+DBG_INFO: 47 ls_enqueue_pid: start
+DBG_INFO: 47 ls_enqueue_pid: pid 47, pgood 100
+DBG_INFO: 47 ls_enqueue_pid: pid 47 enqd in ls_rq
+DBG_INFO: 47 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 47 proc B PRREADY 50 0 100
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 47 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 47
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 47
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 47 resched: preempt 50
+DBG_INFO: 47 resched: end
+BBBBBDBG_INFO: 47 resched: start
+DBG_INFO: 47 resched: pctr 12
+DBG_INFO: 47 linux_sched: start
+DBG_INFO: 47 linux_sched: currproc state: PRFREE
+DBG_INFO: 47 ls_print_queue: start
+DBG_INFO: 47 ls_print_queue: ---LS rq info start---
+DBG_INFO: 47 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 47 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 47 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 47 ls_print_queue: ---LS rq info end---
+DBG_INFO: 47 ls_print_queue: end
+DBG_INFO: 47 ls_is_rqueue_empty: start
+DBG_INFO: 47 ls_is_rqueue_empty: end
+DBG_INFO: 47 ls_end_of_epoch: start
+DBG_INFO: 47 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 47 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 47 ls_end_of_epoch: false
+DBG_INFO: 47 ls_end_of_epoch: end
+DBG_INFO: 47 ls_dequeue_pid: start
+DBG_INFO: 47 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 47 ls_dequeue_pid: end
+DBG_INFO: 47 linux_sched: end
+DBG_INFO: resched opid 47, npid 49
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 5 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+ADBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+ADBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+ADBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+ADBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+ADBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+ADBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+ADBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+MMMDBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 0
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRCURR
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 49 ls_enqueue_pid: start
+DBG_INFO: 49 ls_enqueue_pid: pid 49, pgood 40
+DBG_INFO: 49 ls_enqueue_pid: pid 49 enqd in ls_rq
+DBG_INFO: 49 ls_enqueue_pid: end
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+ADBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: 49 main PRREADY 20 0 40
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: pid 49 has non-0 quant
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: deq'd pid 49
+DBG_INFO: 48 ls_dequeue_pid: end
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: resched opid 48, npid 49
+DBG_INFO: 48 ls_enqueue_pid: start
+DBG_INFO: 48 ls_enqueue_pid: pid 48, pgood 10
+DBG_INFO: 48 ls_enqueue_pid: pid 48 enqd in ls_rq
+DBG_INFO: 48 ls_enqueue_pid: end
+DBG_INFO: 49 resched: preempt 20
+DBG_INFO: 49 resched: end
+DBG_INFO: 49 resched: start
+DBG_INFO: 49 resched: pctr 16
+DBG_INFO: 49 linux_sched: start
+DBG_INFO: 49 linux_sched: currproc state: PRFREE
+DBG_INFO: 49 ls_print_queue: start
+DBG_INFO: 49 ls_print_queue: ---LS rq info start---
+DBG_INFO: 49 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 49 ls_print_queue: 48 proc A PRREADY 5 0 10
+DBG_INFO: 49 ls_print_queue: ---LS rq info end---
+DBG_INFO: 49 ls_print_queue: end
+DBG_INFO: 49 ls_is_rqueue_empty: start
+DBG_INFO: 49 ls_is_rqueue_empty: end
+DBG_INFO: 49 ls_end_of_epoch: start
+DBG_INFO: 49 ls_end_of_epoch: pid 48 has non-0 quant
+DBG_INFO: 49 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 49 ls_end_of_epoch: false
+DBG_INFO: 49 ls_end_of_epoch: end
+DBG_INFO: 49 ls_dequeue_pid: start
+DBG_INFO: 49 ls_dequeue_pid: deq'd pid 48
+DBG_INFO: 49 ls_dequeue_pid: end
+DBG_INFO: 49 linux_sched: end
+DBG_INFO: resched opid 49, npid 48
+DBG_INFO: 48 resched: preempt 5
+DBG_INFO: 48 resched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr 0
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: true
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_calc_pquant_pgood: start
+DBG_INFO: 48 ls_calc_pquant_pgood: iter_pid 51, iter_pid.next -1, tail 51
+DBG_INFO: 48 ls_calc_pquant_pgood: end
+DBG_INFO: 48 ls_admit_new_procs: start
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_admit_new_procs: end
+DBG_INFO: 48 ls_init_queue: start
+DBG_INFO: 48 ls_init_queue: end
+DBG_INFO: 48 ls_reorder_queue: start
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_reorder_queue: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -1
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -2
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -3
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -4
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -5
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -6
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -7
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -8
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -9
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -10
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -11
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -12
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -13
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -14
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -15
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -16
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -17
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -18
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -19
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -20
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+DBG_INFO: 48 ls_is_rqueue_empty: end
+DBG_INFO: 48 linux_sched: 48 is good to go
+DBG_INFO: 48 ls_end_of_epoch: start
+DBG_INFO: 48 ls_end_of_epoch: currpid has quants left
+DBG_INFO: 48 ls_end_of_epoch: false
+DBG_INFO: 48 ls_end_of_epoch: end
+DBG_INFO: 48 ls_dequeue_pid: start
+DBG_INFO: 48 ls_dequeue_pid: empty ls_rq, returning EMPTY_PA1
+DBG_INFO: 48 linux_sched: returning currproc
+DBG_INFO: 48 linux_sched: end
+DBG_INFO: 48 resched: start
+DBG_INFO: 48 resched: pctr -21
+DBG_INFO: 48 linux_sched: start
+DBG_INFO: 48 linux_sched: currproc state: PRCURR
+DBG_INFO: 48 ls_print_queue: start
+DBG_INFO: 48 ls_print_queue: ---LS rq info start---
+DBG_INFO: 48 ls_print_queue: pid pname pstate pquant pctr pgood
+DBG_INFO: 48 ls_print_queue: ---LS rq info end---
+DBG_INFO: 48 ls_print_queue: end
+DBG_INFO: 48 ls_is_rqueue_empty: start
+DBG_INFO: 48 ls_is_rqueue_empty: ls_rq empty
+
+ 

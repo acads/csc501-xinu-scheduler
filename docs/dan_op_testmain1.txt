@@ -1,0 +1,15 @@
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRCURR         0     1     0        4096
+          prnull        0         0     PRREADY         2     0     1           0
+
+Start... A
+Start... C
+Start... B
+
+Test RESULT: A = 392984, B = 558233, C = 652887, (24 : 34 : 40)
+
+
+All user processes have completed.
+
+
+

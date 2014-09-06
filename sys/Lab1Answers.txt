@@ -1,0 +1,63 @@
+                CSC 501 - Operating Systems Principles
+                      PA1 Additional Questions
+                      
+                  Name: Aravindhan Dhanasekaran
+                       Unity ID: adhanas
+
+================================================================================                   
+1. What are the advantages and disadvantages of each of the two scheduling 
+   policies? Also, give the advantages and disadvantages of the round robinss le 
+   scheduling policy originally implemented in Xinu.
+
+Xinu scheduler
+Advantages
+    * Very easy to implement as if follows a simple "higher priority first"
+      algorithm.
+    * Very minimal context switching time as the context switching code just
+      has to schedule the next process with the highest priority.
+    * Best suited for non real-time embedded systems.
+Disadvantages
+    * Process startvation and unfairness - Xinu scheduler always favors the
+      the processes with higher priority. Thus it would lead to starvation of
+      lower priority processes.
+    * Kernel cannot preempt a higher priority process that have stuck in an
+      infinite loop.
+      
+Random scheduler
+Advatages
+    * Ensures fairness (no starvation between processes) among processes. i.e.,
+      all the processes in the ready queue would get a chance to be run.
+    * Even while acheiving fairness, it favors higher priority processes by
+      selecting them with a higher probability than that of a lower priority 
+      process.
+Disadvantages
+    * Process scheduling is somewhat unpredictable due to the high degree of
+      randomness involved in selecting which process is to be run.
+    * Requires more memory than that of Xinu scheduler as it involves three
+      different queues.
+    * Requires more time to context switch when compared to that of Xinu 
+    scheduler.
+    
+Linux-like scheduler
+Advantages
+    * Best among the three as it ensures fairness among all processes at the 
+      same time schedules higher priority processes more frequently and with 
+      more CPU time.
+    * Processes CPU time is based on how nicer they are to other processes and 
+      also based on the priority of the process.
+Disadvantages
+    * Very complex to implement as it has many parameters to consider - goodness,
+      per process CPU time and so on.
+    * Time being spent on context switching is more as it has to recalculate the
+      CPU time during every context switch, select a process with a higher 
+      goodness during every process switch and finally recalculate goodness 
+      at the end of an epoch.
+    * Requires more memory as it has to store additional information such as
+      per process CPU time and per process goodness.
+      
+================================================================================
+2. Describe the way each of the schedulers affects the NULL process.
+    In all the cases the null process is run only when there are no other
+    runnable processes (processes that are on ready queue) to run.
+    
+================================================================================

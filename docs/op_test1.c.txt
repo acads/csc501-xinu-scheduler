@@ -1,0 +1,76 @@
+TEST1:
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ps for pid 48 proc proc A
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc A       48        80      PRCURR        82     1     0        4096
+            main       49        20     PRREADY         2     1     1        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ps for pid 46 proc proc B
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc B       46        90      PRCURR        81     1     0        4096
+            main       49        20     PRREADY         2     2     2        4096
+          proc C       47         5     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+ps for pid 45 proc proc F
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc F       45        60      PRCURR        81     1     0        4096
+            main       49        20     PRREADY         2     3     3        4096
+          proc C       47         5     PRREADY         0     0     0        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+ps for pid 49 proc main
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc E       43        40     PRREADY        30     1     1        4096
+            main       49        20      PRCURR         2     6     5        4096
+          proc D       44        10     PRREADY        60     2     2        4096
+          proc C       47         5     PRREADY        60     2     2        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMCCCCCCCCCCCCCCCCCCCCCCCCCC
+ps for pid 47 proc proc C
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc E       43        40     PRREADY        30     1     1        4096
+            main       49        20     PRREADY        32     6     6        4096
+          proc D       44        10     PRREADY        60     2     2        4096
+          proc C       47         5      PRCURR        82     3     2        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDDDDDDDDDDDDDDDDDDDDDDDDD
+ps for pid 44 proc proc D
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc E       43        40     PRREADY        60     2     2        4096
+            main       49        20     PRREADY        32     6     6        4096
+          proc D       44        10      PRCURR        81     3     2        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMEEEEEEEEEEEEEEEEEEEEEEEEE
+ps for pid 43 proc proc E
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+          proc E       43        40      PRCURR        81     3     2        4096
+            main       49        20     PRREADY        62     7     7        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+MMMMMMMMMMMMMMMMMMMMMMMMMMM
+ps for pid 49 proc main
+
+            Name      PID  Priority      Status     Ticks   Ins  Outs   StackSize
+            main       49        20      PRCURR        86     8     7        4096
+          prnull        0         0     PRREADY         1     0     1           0
+
+
+
+All user processes have completed.
+
+
